@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes'On</title>
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#sport"><i class="fa-solid fa-person-running"></i> Sports</a></li>
+                <li><a href="#lifestyle"><i class="fa-solid fa-shoe-prints"></i> Lifestyle</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-user"></i> Contact</a></li>
+                <li><a href="#faq"><i class="fa-solid fa-question"></i> FÀQ</a></li>
+            </ul>
+
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li id ="logo">
+                    <a href="#">
+                        <img src="./img/logo.png">
+                    </a>
+                </li>         
+                <li>
+                    <a>
+                        <i class="fa-solid fa-bars" id="menuBtn"></i>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa-solid fa-cart-shopping" id="cartIcon"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="cart-menu" id="cartMenu">
+            <div class="cart-header">
+                <h2>🛒 Mon panier</h2>
+                <i class="fa-solid fa-xmark" id="closeCart"></i>
+            </div>
+
+            <div class="cart-content" id="cartContent">
+                <p class="empty">Votre panier est vide.</p>
+            </div>
+        </div>
+    </header>
+    <section class="accueil" id="accueil">
+        <div class="logo">
+            <img src="./img/logo32x32(copie).png" alt="Logo-shoes-on">
+        </div>
+        <div class="logo">
+            <h1>Mets tes chaussures, impose ton style !</h1>
+        </div>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis illo dicta minus laboriosam officia? Voluptatibus pariatur et ex soluta autem molestiae modi, ipsa rerum ullam fuga sed harum possimus. Architecto, quidem. Magnam consequatur corporis praesentium ipsum nihil id rerum repellendus sint labore consectetur necessitatibus tempore mollitia eius, aperiam maxime aliquid culpa unde omnis. Est repudiandae quidem nesciunt ullam consectetur in iure rerum necessitatibus amet odit! Iste, alias? Tenetur in sint nihil, quaerat tempore, aliquam voluptas quis dignissimos quasi, itaque error exercitationem doloribus vel quod! Debitis voluptatibus velit, cumque eaque ullam laudantium distinctio facere! Voluptatum optio tempore, ratione autem laudantium hic.</p>
+        </div>
+    </section>
+    <section class="sport" id="sport">
+        <div class="EnTete">
+            <h1>Sport</h1>
+        </div>
+        <div class="sport-contenu">
+            <div class="box">
+                <img src="./img/Adidas AE 2.jpg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Adidas A. Edward 2</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: 🔴🟠🟡🟢🔵🟣⚫</span>
+                    <br>
+                    <span class="prix">180,00$ <span style="text-decoration: line-through; color: gray;">200,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn"
+                    data-name="Adidas A. Edward 2"
+                    data-price="180$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/Adidas Dame 9.jpg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Adidas Damian Lillard 9</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: 🔴🟠🟡🟢🔵🟣⚫</span>
+                    <br>
+                    <span class="prix">179,00$ <span style="text-decoration: line-through; color: gray;">210,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button
+                    class="buy-btn"
+                    data-name="Adidas Damian Lillard 9"
+                    data-price="179$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/Adidas Don Issue 7.jpg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Adidas Don Issue 7</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: 🔴🟠🟡🟢🔵🟣⚫</span>
+                    <br>
+                    <span class="prix">135,00$ <span style="text-decoration: line-through; color: gray;">150,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn"
+                    data-name="Adidas Don Issue 7"
+                    data-price="135$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/Adidas Harden Vol9.jpg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Adidas Harden Volume 9</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪🔴🟣⚫</span>
+                    <br>
+                    <span class="prix">171,00$ <span style="text-decoration: line-through; color: gray;">190,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn"
+                    data-name="Adidas Harden Volume 9"
+                    data-price="171$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/Anta shockwaves 6 pro black.jpeg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Anta Shockwaves 6 pro</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪⚫🔴🔵🟡</span>
+                    <br>
+                    <span class="prix">232,20$ <span style="text-decoration: line-through; color: gray;">258,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn"
+                    data-name="Anta Shockwaves 6 pro"
+                    data-price="232,20$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/Anta Shockwaves 7.0 red.jpeg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Anta Shockwaves 7.0</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪⚫🔴🔵🟡</span>
+                    <br>
+                    <span class="prix">265,50$ <span style="text-decoration: line-through; color: gray;">295,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn"
+                    data-name="Anta Shockwaves 7.0"
+                    data-price="265,50$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/Puma MB02 Be You.jpg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Puma MB02 "BE YOU"</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪⚫🔴🔵🟡</span>
+                    <br>
+                    <span class="prix">265,50$ <span style="text-decoration: line-through; color: gray;">295,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn"
+                    data-name="Puma MB02 'BE YOU'"
+                    data-price="265,50$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/Rigorer AR 2.jpg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Rigorer Austin Reaves 2</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪⚫🔴🔵🟡</span>
+                    <br>
+                    <span class="prix">161,82$ <span style="text-decoration: line-through; color: gray;">179,80$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn"
+                    data-name="Rigorer Austin Reaves 2"
+                    data-price="161,82$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/UA D-Fox 2.jpg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Under Armour D Fox 2</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪⚫🔴🔵🟡</span>
+                    <br>
+                    <span class="prix">161,82$ <span style="text-decoration: line-through; color: gray;">179,80$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn"
+                    data-name="Under Armour D Fox 2"
+                    data-price="161,82$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/UA drive 4 (2).jpg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Under Armour Drive 4</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪⚫🔴🔵🟡</span>
+                    <br>
+                    <span class="prix">161,82$ <span style="text-decoration: line-through; color: gray;">179,80$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn"
+                    data-name="Under Armour Drive 4" data-price="161,82$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/UA lockdown 7.jpeg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Under Armour Lockdown 7</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪⚫🔴🔵🟡</span>
+                    <br>
+                    <span class="prix">80,00$ <span style="text-decoration: line-through; color: gray;">100,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn"
+                    data-name="Under Armour Lockdown 7"
+                    data-price="80$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+        </div>       
+    </section>
+    <section class="lifestyle" id="lifestyle">
+        <div class="EnTete">
+            <h1>Lifestyle</h1>
+        </div>
+        <div class="lifestyle-contenu">
+            <div class="box">
+                <img src="./img/TimberLand.jpg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Timberland</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪⚫🔴🔵🟡</span>
+                    <br>
+                    <span class="prix">40,50$ <span style="text-decoration: line-through; color: gray;">45,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn"
+                    data-name="Timberland"
+                    data-price="40,50$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/Air Max 95.jpg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Nike Air Max 95</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪🔴</span>
+                    <br>
+                    <span class="prix">72,00$ <span style="text-decoration: line-through; color: gray;">80,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn" data-name="Nike Air Max 95"
+                    data-price="72$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/Adidas Stan Smith white.jpg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Adidas Stan Smith White</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪⚫</span>
+                    <br>
+                    <span class="prix">170,99$ <span style="text-decoration: line-through; color: gray;">191,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn" data-name="Adidas Stan Smith White" data-price="170,99$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/Air Jordan 1 Blue.jpg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Nike Air Jordan One</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪🔴🔵🟡⚫</span>
+                    <br>
+                    <span class="prix">108,99$ <span style="text-decoration: line-through; color: gray;">121,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn" data-name="Nike Air Jordan One" data-price="108,99$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/NIKE+AIR+MAX+PLUS.png">
+                <div class="info">
+                    <p>
+                    <span class="nom">Nike Air TN</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪🟣🔵🔴</span>
+                    <br>
+                    <span class="prix">178,20$ <span style="text-decoration: line-through; color: gray;">198,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn" data-name="Nike Air TN" data-price="178,20$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/AIR+FORCE+1+'07.png">
+                <div class="info">
+                    <p>
+                    <span class="nom">Nike Air Force 1 low</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪⚫🔴</span>
+                    <br>
+                    <span class="prix">103,50$ <span style="text-decoration: line-through; color: gray;">115,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn" data-name="Nike Air Force 1 low" data-price="103,50$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/Nike Air force 1 black.jpg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Nike Air Force 1 low black</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪⚫🔴🔵🟡</span>
+                    <br>
+                    <span class="prix">265,50$ <span style="text-decoration: line-through; color: gray;">295,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn" data-name="Nike Air Force 1 low black" data-price="265,50$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/AF1 high.jpeg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Nike Air Force 1 High</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪⚫</span>
+                    <br>
+                    <span class="prix">134,10$ <span style="text-decoration: line-through; color: gray;">149,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn" data-name=">Nike Air Force 1 High" data-price="134,10$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/Air max 270.jpeg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Nike Air Max 270</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪⚫🔴🔵</span>
+                    <br>
+                    <span class="prix">27,00$ <span style="text-decoration: line-through; color: gray;">30,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn" data-name="Nike Air Max 270" data-price="27$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/Waffle Trainer 2.jpg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Nike Waffle Trainer 2</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪⚫🔴🔵</span>
+                    <br>
+                    <span class="prix">28,80$ <span style="text-decoration: line-through; color: gray;">32,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn" data-name="Nike Waffle Trainer 2" data-price="28,80$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/Nike pacific .jpeg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Nike Pacific Women</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪⚫🔴🔵</span>
+                    <br>
+                    <span class="prix">64,99$ <span style="text-decoration: line-through; color: gray;">71,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn" data-name="Nike Pacific Women" data-price="64,99$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./img/Jord1 High.jpeg">
+                <div class="info">
+                    <p>
+                    <span class="nom">Nike Air Jordan 1 High</span>
+                    <br>
+                    <span class="pointureCouleur">Pointure: 42, 41, 40, 39, 38, 37 <br> Couleur: ⚪⚫🔴</span>
+                    <br>
+                    <span class="prix">123,50$ <span style="text-decoration: line-through; color: gray;">135,00$</span></span>
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="buy-btn" data-name="Nike Air Jordan 1 High" data-price="123,50$">Acheter</button>
+                    <a class="voir-panier">Voir le panier</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="EnTete">
+            <h1>Contact</h1>
+        </div>
+        <div class="contact-contenu">
+            <div class="input-box">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom">
+            </div>
+            <div class="input-box">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom">
+            </div>
+            <div class="input-box">
+                <label for="adresse">Email</label>
+                <input type="email" id="adresse">
+            </div>
+            <div class="input-box">
+                <label for="tel">Téléphone</label>
+                <input type="tel" id="tel">
+            </div>
+        </div>
+    </section>
+    <section class="faq" id="faq">
+        <div class="EnTete">
+            <h1>FÀQ</h1>
+        </div>
+        <div class="question">
+            <details>
+                <summary>Quels technologies utilises-tu ?</summary>
+                <p>Les technologies utilisées :</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Est-ce que ce site est responsive ?</summary>
+                <p>Oui ! Ce site utilise une technologie sur CSS3 pour s'adapter à tous les types d'écran.</p>
+            </details>
+            <details>
+                <summary>Est-il possible de collaborer ?</summary>
+                <p>Oui ! Je suis apte à collaborer.</p>
+            </details>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>
