@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-family: "Bahnschrift", sans-serif;
+}
+body {
+    background-color: var(--bg-color);
+    padding-top: 2rem;
+    z-index: 0;
+}
+:root {
+    --bg-color: white;
+    --second-bg-color: rgb(225, 225, 225);
+    --text-color: black;
+    --main-color: #f8091c;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: black;
+        --second-bg-color: rgb(19, 19, 19);
+        --text-color: white;
+        --main-color: rgb(255, 89, 89);
+    }
+}
+#logo img {
+    width: 2.5rem;
+    padding: 0;
+    margin-left: 10px;
+}
+
+/* ******navbar******* */
+header li {
+    list-style: none;
+    float: right;
+    margin-right: 2rem;
+}
+header i {
+    color: var(--text-color);
+    transition: 0.3s ease;
+}
+.navbar input {
+    color: var(--text-color);
+    background-color: var(--second-bg-color);
+    padding: 1px;
+    border-radius: 5px;
+    margin-left: 10px;
+    align-self: center;
+}
+#logo {
+    float: left;
+    transform: scale(1.5);
+    align-self: center;
+}
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--second-bg-color);
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 15px 20px 15px 20px;
+    z-index: 1000;
+}
+.menu {
+    position: fixed;
+    background: var(--second-bg-color);
+    padding: 5px;
+    opacity: 0;
+    top: 40px;
+    right: 10px;
+    transform: translateY(-10px);
+    pointer-events: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    gap: 10px;
+    min-width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.menu.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    z-index: 1001;
+}
+.menu li {
+    list-style: none;
+    float: none;
+    margin: 0;
+}
+.menu li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: var(--second-bg-color);
+    transition: 0.3s ease;
+}
+.menu li a:hover {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+}
+/* ===== PANIER ===== */
+.cart-menu {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100vh;
+    background-color: var(--second-bg-color);
+    box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+    z-index: 2000;
+    transition: 0.4s ease;
+    padding: 20px;
+    overflow-y: auto;
+}
+.cart-menu.actived {
+    right: 0;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--bg-color);
+    padding-bottom: 10px;
+}
+
+.cart-header h2 {
+    font-size: 1.5rem;
+}
+
+.cart-header i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cart-content {
+    margin-top: 20px;
+}
+
+.cart-item {
+    background-color: var(--bg-color);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    cursor: default;
+}
+
+.cart-item h3 {
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.cart-item p {
+    font-weight: 600;
+    color: var(--text-color);
+}
+.cart-item button {
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+    padding: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.empty {
+    text-align: center;
+    margin-top: 50px;
+    color: var(--text-color);
+}
+
+/* *********Accueil******** */
+section {
+    padding-top: 3rem;
+}
+.accueil .logo {
+    display: flex;
+    justify-content: center;
+}
+.logo h1 {
+    margin-bottom: 3rem;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "century gothic";
+    background-color: var(--main-color);
+    border-bottom: 5px solid var(--bg-color);
+    border-right: 5px solid var(--bg-color);
+    box-shadow: 12px 10px 0px var(--text-color);
+}
+.accueil img {
+    width: 8vw;
+    margin-bottom: 1rem;
+}
+.accueil p {
+    margin: 2rem;
+    padding-bottom: 4rem;
+    font-size: 1.2rem;
+}
+.EnTete h1 {
+    margin: 2rem;
+    font-size: 4rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-family: "Century Gothic",sans-serif;
+}
+.sport-contenu , .lifestyle-contenu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+.box {
+    background-color: var(--second-bg-color);
+    border: 1px solid var(--second-bg-color);
+    margin: 20px;
+    cursor: default;
+}
+.box img {
+    width: 100%;
+}
+.info, .btn {
+    padding: 10px 10px 20px 10px;
+}
+.info .nom {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 2;
+}
+.info .pointureCouleur {
+    color: gray;
+    font-size: 0.8rem; 
+    line-height: 2; 
+    cursor: pointer;
+}
+.info .prix {
+    font-weight: 900;
+    line-height: 2;
+    font-size: 1.5rem;
+    transform: scale(1.5);
+}
+.btn button {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-weight: 700;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.btn a {
+    margin-left: 10px;
+    font-style: italic;
+    text-decoration: underline;
+}
+/* ***********Contact************** */
+.input-box {
+    width: 40%;
+    display: grid;
+    margin: auto;
+}
+.input-box label {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 8px;
+    margin-top: 1rem;
+}
+.input-box input {
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background: var(--second-bg-color);
+    color: var(--text-color);
+}
+/* **********FAQ********* */
+.question {
+    width: 40%;
+    display: grid;
+    margin: auto;
+}
+details {
+    margin: 1.5rem;
+    padding: 15px;
+    background-color: var(--second-bg-color);
+    border-radius: 15px;
+}
+summary {
+    font-size: 1.6rem;
+}
+.question p {
+    padding: 10px 10px 5px 10px;
+    font-size: 1.2rem;
+}
+.question li{
+    margin: 0 0 5px 25px;
+}
+.faq {
+    margin-bottom: 12rem;
+}
+/* ================= RESPONSIVE ================= */
+
+/* Tablette */
+@media screen and (max-width: 992px) {
+
+    .sport-contenu,
+    .lifestyle-contenu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .EnTete h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .input-box,
+    .question {
+        width: 70%;
+    }
+
+    .accueil img {
+        width: 18vw;
+    }
+}
+
+/* Téléphone */
+@media screen and (max-width: 768px) {
+
+    body {
+        padding-top: 5rem;
+    }
+
+    .cart-menu {
+        width: 100%;
+        right: -100%;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        padding: 10px;
+    }
+
+    header li {
+        margin-right: 1rem;
+    }
+
+    #logo {
+        transform: scale(1.2);
+    }
+
+    .navbar input {
+        width: 120px;
+    }
+
+    /* ACCUEIL */
+    .logo h1 {
+        font-size: 1.5rem;
+        box-shadow: 6px 6px 0px var(--text-color);
+    }
+
+    .accueil img {
+        width: 25vw;
+    }
+
+    .accueil p {
+        font-size: 1rem;
+        margin: 1rem;
+        text-align: justify;
+    }
+
+    .EnTete h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    /* PRODUITS */
+    .sport-contenu,
+    .lifestyle-contenu {
+        grid-template-columns: 1fr;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .info .nom {
+        font-size: 1.2rem;
+    }
+
+    .info .prix {
+        font-size: 1.2rem;
+        transform: scale(1);
+    }
+
+    .btn button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn a {
+        display: block;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    /* CONTACT */
+    .input-box {
+        width: 90%;
+    }
+
+    .input-box label {
+        font-size: 1.2rem;
+    }
+
+    /* FAQ */
+    .question {
+        width: 90%;
+    }
+
+    summary {
+        font-size: 1.2rem;
+    }
+
+    .question p {
+        font-size: 1rem;
+    }
+}
+
+/* Très petits écrans */
+@media screen and (max-width: 480px) {
+
+    .EnTete h1 {
+        font-size: 1.8rem;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+
+    .accueil img {
+        width: 35vw;
+    }
+
+    .navbar input {
+        width: 90px;
+    }
+}
