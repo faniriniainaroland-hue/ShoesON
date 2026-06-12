@@ -276,7 +276,6 @@ section {
 }
 .input-box input {
     padding: 10px;
-    border-radius: 15px;
     border: none;
     background: var(--second-bg-color);
     color: var(--text-color);
